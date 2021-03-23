@@ -1,8 +1,9 @@
 # Git Commit Lines Graph
+[![PyPI](https://img.shields.io/pypi/v/git-lines-graph)](https://pypi.org/project/git-lines-graph/)
 
 A small python script to visualize the number of lines in a project, as a function of time. 
 
-<img src="example.png" width="400" align="center">
+<img src="https://raw.githubusercontent.com/danielfleischer/git-commits-lines-graph/master/example.png" width="400" align="center">
 
 **Install:** `python3 -m pip install git-lines-graph`
 
