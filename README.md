@@ -1,16 +1,21 @@
 # Git Commit Lines Graph
 
-A small python scirpt to visualize the number of lines in a project, as a function of time. 
+A small python script to visualize the number of lines in a project, as a function of time. 
+
 <img src="example.png" width="400" align="center">
 
-**Install:** `python3 -m pip install git-commits-lines-graph`.
+**Install:** `python3 -m pip install git-commits-lines-graph`
 
 
 **Usage:** `git-lines-graph [-b BRANCH] GIT-DIR` 
 
 Call with a git project directory. You can also specify a branch to scan; other wise the branch currently checked in is used. 
 
-**Dependencies:** `click` for argument parsing, `GitPython` to interact with python and `matplotlib` for plotting.
+**Dependencies:** 
+- `click` for argument parsing.
+- `GitPython` to interact with python.
+- `matplotlib` for plotting.
+- `pandas` for data manipulation. 
 
 ----
 

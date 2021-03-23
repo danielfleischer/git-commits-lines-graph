@@ -33,7 +33,3 @@ def main(git_dir, branch):
     ax = data['total'].plot()
     ax.yaxis.set_major_formatter(mpl.ticker.StrMethodFormatter('{x:,.0f}'))
     plt.show()
-
-
-# if __name__ == '__main__':
-#     main()
