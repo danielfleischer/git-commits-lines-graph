@@ -4,7 +4,7 @@ A small python script to visualize the number of lines in a project, as a functi
 
 <img src="example.png" width="400" align="center">
 
-**Install:** `python3 -m pip install git-commits-lines-graph`
+**Install:** `python3 -m pip install git-lines-graph`
 
 
 **Usage:** `git-lines-graph [-b BRANCH] GIT-DIR` 
