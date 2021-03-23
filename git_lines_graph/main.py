@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 @click.option("-b", "--branch",
               default=None,
               help="branch to browse.")
-def run(git_dir, branch):
+def main(git_dir, branch):
     repo = git.repo.Repo(git_dir)
 
     data = []
@@ -35,5 +35,5 @@ def run(git_dir, branch):
     plt.show()
 
 
-if __name__ == '__main__':
-    run()
+# if __name__ == '__main__':
+#     main()
