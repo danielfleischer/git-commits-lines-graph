@@ -14,7 +14,7 @@ Call with a git project directory. You can also specify a branch to scan; other 
 
 **Dependencies:** 
 - `click` for argument parsing.
-- `GitPython` to interact with python.
+- `GitPython` to interact with `git`.
 - `matplotlib` for plotting.
 - `pandas` for data manipulation. 
 
