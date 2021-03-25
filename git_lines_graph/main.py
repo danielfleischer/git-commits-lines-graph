@@ -1,5 +1,6 @@
 import git
 import os
+import sys
 import click
 import pandas as pd
 import matplotlib as mpl
@@ -12,7 +13,12 @@ import matplotlib.pyplot as plt
               default=None,
               help="branch to browse.")
 def main(git_dir, branch):
-    repo = git.repo.Repo(git_dir)
+    try:
+        repo = git.repo.Repo(git_dir)
+    except:
+        print("Exception of type: {}\nDir. not a valid git project: {}".
+              format(sys.exc_info()[0], git_dir))
+        exit()
 
     data = []
     for i in reversed(list(repo.iter_commits(rev=branch))):
