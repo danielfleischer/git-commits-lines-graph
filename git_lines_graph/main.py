@@ -35,9 +35,10 @@ def main():
     data.date = pd.to_datetime(data.date)
     data.set_index(['date'], inplace=True)
 
-    plt.figure("Code Lines Progress in project {}".
-               format(os.path.basename(git_dir)))
-    plt.ylabel("# of lines")
-    ax = data['total'].plot()
-    ax.yaxis.set_major_formatter(mpl.ticker.StrMethodFormatter('{x:,.0f}'))
-    plt.show()
+    with plt.xkcd():
+        plt.figure("Code Lines Progress in project {}".
+                   format(os.path.basename(git_dir)))
+        plt.ylabel("# of lines")
+        ax = data['total'].plot()
+        ax.yaxis.set_major_formatter(mpl.ticker.StrMethodFormatter('{x:,.0f}'))
+        plt.show()
