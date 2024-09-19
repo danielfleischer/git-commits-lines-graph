@@ -1,3 +1,21 @@
+[project]
+name = "git-lines-graph"
+version = "2.0.0"
+description = "Git commit lines graph"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "gitpython>=3.1.43",
+    "matplotlib>=3.9.2",
+    "pandas>=2.2.2",
+]
+
+[project.scripts]
+git-lines-graph = "git_lines_graph:main"
+
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.urls]
+Repository = "https://github.com/danielfleischer/git-commits-lines-graph"
