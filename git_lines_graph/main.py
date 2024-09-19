@@ -1,23 +1,25 @@
+import argparse
 import git
 import os
 import sys
-import click
 import pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 
-@click.command()
-@click.argument("git_dir", required=True)
-@click.option("-b", "--branch",
-              default=None,
-              help="branch to browse.")
-def main(git_dir, branch):
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("git_dir", type=str, help="Git directory")
+    parser.add_argument("-b", "--branch", type=str, default=None, help="Branch to browse")
+
+    args = parser.parse_args()
+    git_dir = args.git_dir
+    branch = args.branch
+
     try:
         repo = git.repo.Repo(git_dir)
-    except:
-        print("Exception of type: {}\nDir. not a valid git project: {}".
-              format(sys.exc_info()[0], git_dir))
+    except git.exc.InvalidGitRepositoryError as e:
+        print("Not a valid git project: {}".format(git_dir))
         exit()
 
     data = []
