@@ -13,7 +13,6 @@ A small python script to visualize the number of lines in a project, as a functi
 Call with a git project directory. You can also specify a branch to scan; other wise the branch currently checked in is used. 
 
 **Dependencies:** 
-- `click` for argument parsing.
 - `GitPython` to interact with `git`.
 - `matplotlib` for plotting.
 - `pandas` for data manipulation. 
