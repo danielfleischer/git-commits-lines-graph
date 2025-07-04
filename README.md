@@ -5,14 +5,21 @@ A small python script to visualize the number of lines in a project, as a functi
 
 <img src="https://raw.githubusercontent.com/danielfleischer/git-commits-lines-graph/master/example.png" width="400" align="center">
 
-**Install:** `python3 -m pip install git-lines-graph`
+## Install
+```sh
+uv tool install git-lines-graph   
+# OR
+python3 -m pip install git-lines-graph
+```
 
+## Usage
 
-**Usage:** `git-lines-graph [-b BRANCH] GIT-DIR` 
+Run: `git-lines-graph [-b BRANCH] [GIT-DIR]` 
 
-Call with a git project directory. You can also specify a branch to scan; other wise the branch currently checked in is used. 
+Call with an optional git project directory. You can also specify a branch to scan; other wise the branch currently checked in is used. 
 
-**Dependencies:** 
+## Dependencies
+
 - `GitPython` to interact with `git`.
 - `matplotlib` for plotting.
 - `pandas` for data manipulation. 

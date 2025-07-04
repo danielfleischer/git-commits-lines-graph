@@ -9,7 +9,7 @@ import pandas as pd
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("git_dir", type=str, help="Git directory")
+    parser.add_argument("git_dir", type=str, nargs="?", default=os.getcwd(), help="Git directory (default: current directory)")
     parser.add_argument("-b", "--branch", type=str, default=None, help="Branch to browse")
 
     args = parser.parse_args()

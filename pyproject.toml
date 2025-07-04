@@ -1,9 +1,28 @@
 [project]
 name = "git-lines-graph"
-version = "2.0.0"
+version = "2.1.0"
 description = "Git commit lines graph"
 readme = "README.md"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
 requires-python = ">=3.9"
+authors = [
+    {name = "Daniel Fleischer"}
+]
+keywords = ["git", "visualization", "commits", "graph", "development"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Version Control :: Git",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
 dependencies = [
     "gitpython>=3.1.43",
     "matplotlib>=3.9.2",
@@ -13,9 +32,11 @@ dependencies = [
 [project.scripts]
 git-lines-graph = "git_lines_graph:main"
 
+[project.urls]
+Repository = "https://github.com/danielfleischer/git-commits-lines-graph"
+Issues = "https://github.com/danielfleischer/git-commits-lines-graph/issues"
+Homepage = "https://github.com/danielfleischer/git-commits-lines-graph"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
-
-[project.urls]
-Repository = "https://github.com/danielfleischer/git-commits-lines-graph"
