@@ -40,3 +40,6 @@ Homepage = "https://github.com/danielfleischer/git-commits-lines-graph"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 120
