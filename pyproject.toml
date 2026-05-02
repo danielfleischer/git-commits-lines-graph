@@ -1,11 +1,11 @@
 [project]
 name = "git-lines-graph"
-version = "2.3.1"
+version = "2.3.2"
 description = "Git commit lines graph"
 readme = "README.md"
 license = "GPL-3.0-or-later"
 license-files = ["LICENSE"]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "Daniel Fleischer" }]
 keywords = ["git", "visualization", "commits", "graph", "development"]
 classifiers = [
@@ -14,7 +14,6 @@ classifiers = [
   "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
   "Operating System :: OS Independent",
   "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
