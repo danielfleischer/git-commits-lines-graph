@@ -1,6 +1,6 @@
 [project]
 name = "git-lines-graph"
-version = "2.3.2"
+version = "2.3.3"
 description = "Git commit lines graph"
 readme = "README.md"
 license = "GPL-3.0-or-later"
