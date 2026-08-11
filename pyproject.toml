@@ -1,6 +1,6 @@
 [project]
 name = "git-lines-graph"
-version = "2.3.3"
+version = "2.3.4"
 description = "Git commit lines graph"
 readme = "README.md"
 license = "GPL-3.0-or-later"
@@ -17,6 +17,8 @@ classifiers = [
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
   "Topic :: Software Development :: Version Control :: Git",
   "Topic :: Scientific/Engineering :: Visualization",
 ]
